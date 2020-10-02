@@ -1,0 +1,18 @@
+{
+  "name": "pegas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Виталий Набережный <naberezhniy@taxi21.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "gh-pages": "^3.1.0",
+    "sass": "^1.26.11"
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "predeploy": "rm ./dist -rf && yarn build",
+    "deploy": "gh-pages -d dist"
+  }
+}
