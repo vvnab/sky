@@ -72,6 +72,7 @@ main {
     padding-left: $paddingLeft;
     border-left: 2px solid hsla(0, 0, 100, 20%);
     border-spacing: 0.3rem;
+    max-width: 800px;
 
     td {
       padding: 0.5rem 1rem;
@@ -146,6 +147,15 @@ footer {
             width: 2rem;
             min-width: 2rem;
             margin-left: -0.5rem;
+          }
+
+          a {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
       }
